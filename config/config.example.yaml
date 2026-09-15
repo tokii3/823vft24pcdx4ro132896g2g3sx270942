@@ -1,0 +1,28 @@
+# Kopiere diese Datei zu config.yaml für lokale Tests.
+# In GitHub Actions kommen diese Werte NICHT aus dieser Datei,
+# sondern aus Repository Secrets (siehe README.md).
+
+gemini:
+  api_key_env: "GEMINI_API_KEY"      # Name des GitHub Secrets, nicht der Key selbst
+  model: "placeholder"
+
+youtube:
+  client_id_env: "YT_CLIENT_ID"
+  client_secret_env: "YT_CLIENT_SECRET"
+  refresh_token_env: "YT_REFRESH_TOKEN"
+  channel_id_env: "YT_CHANNEL_ID"
+
+pixai:
+  session_token_env: "PIXAI_SESSION_TOKEN"   # inoffizieller Wrapper, siehe masterplan.md Abschnitt 1.5
+
+voice:
+  engine: "piper"          # Alternative später: "xtts"
+  voice_model: "placeholder"
+
+drive:
+  service_account_json_env: "GDRIVE_SERVICE_ACCOUNT_JSON"
+  project_folder_id: "placeholder"   # ID des in Drive bereits angelegten Projektordners
+
+limits:
+  max_comment_replies_per_hour: 10
+  max_uploads_per_day: 1

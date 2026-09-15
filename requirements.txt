@@ -1,0 +1,9 @@
+# Wird schrittweise befüllt, sobald die jeweiligen Agenten implementiert werden.
+# Platzhalter-Liste, Versionen werden bei tatsächlicher Nutzung fixiert.
+
+# google-generativeai      # Gemini API (Content-Agent)
+# google-api-python-client # YouTube Data API v3 (Publish-Agent)
+# google-auth-oauthlib
+# piper-tts                # Voice-Agent (lokal, CPU)
+# moviepy                  # Schnitt/Compositing
+# ffmpeg-python
