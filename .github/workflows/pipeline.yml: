@@ -1,0 +1,23 @@
+# Platzhalter-Workflow – noch NICHT aktiv (kein echter Trigger).
+# Wird ab Phase 2 (Teilautomatisierung, masterplan.md Abschnitt 6) scharf geschaltet.
+#
+# Geplanter Ablauf:
+#   1. Cron-Trigger (z. B. 1x täglich)
+#   2. Content-Agent -> Visual-Agent -> Voice-Agent -> Schnitt/Compositing
+#   3. Qualitäts-Gate (Master-Agent)
+#   4. Phase 2: Upload nur mit manueller Freigabe (Issue/PR-Review)
+#      Phase 3: automatischer Upload, sobald Vertrauen ins Qualitäts-Gate besteht
+
+name: raymi-pipeline
+
+on:
+  workflow_dispatch: {}   # bewusst NUR manuell auslösbar, solange kein Cron aktiv ist
+  # schedule:
+  #   - cron: "0 8 * * *"   # Beispiel: täglich 08:00 UTC – erst ab Phase 2 aktivieren
+
+jobs:
+  placeholder:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Platzhalter
+        run: echo "Pipeline noch nicht implementiert – siehe docs/masterplan.md, Roadmap Phase 1."
