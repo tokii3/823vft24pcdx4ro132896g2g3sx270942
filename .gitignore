@@ -1,0 +1,23 @@
+# Secrets & lokale Konfiguration – NIEMALS committen
+config/config.yaml
+config/*.env
+.env
+*.key
+*.pem
+
+# Generierte Assets / Zwischenergebnisse (liegen in Google Drive, nicht im Repo)
+output/
+tmp/
+*.mp4
+*.wav
+*.mp3
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
